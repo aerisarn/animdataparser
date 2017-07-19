@@ -6,8 +6,24 @@ import java.util.Scanner;
 
 public class ClipAttacksBlock extends QuadBlock {
 	
-	public Integer blocks;
+	public Integer blocks = 0;
 	List<AttackDataBlock> attackData = new ArrayList<>();
+
+	public Integer getBlocks() {
+		return blocks;
+	}
+
+	public void setBlocks(Integer blocks) {
+		this.blocks = blocks;
+	}
+
+	public List<AttackDataBlock> getAttackData() {
+		return attackData;
+	}
+
+	public void setAttackData(List<AttackDataBlock> attackData) {
+		this.attackData = attackData;
+	}
 
 	@Override
 	public void parseBlock(Scanner input) throws Exception {

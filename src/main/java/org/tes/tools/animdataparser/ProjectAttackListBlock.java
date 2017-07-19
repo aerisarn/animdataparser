@@ -6,8 +6,23 @@ import java.util.Scanner;
 
 public class ProjectAttackListBlock extends BlockObject {
 
-	StringListBlock projectFiles = new StringListBlock();
-	List<ProjectAttackBlock> projectAttackBlocks = new ArrayList<>();
+	private StringListBlock projectFiles = new StringListBlock();
+	private List<ProjectAttackBlock> projectAttackBlocks = new ArrayList<>();	
+	
+	public StringListBlock getProjectFiles() {
+		return projectFiles;
+	}
+	public void setProjectFiles(StringListBlock projectFiles) {
+		this.projectFiles = projectFiles;
+	}
+	public List<ProjectAttackBlock> getProjectAttackBlocks() {
+		return projectAttackBlocks;
+	}
+	public void setProjectAttackBlocks(List<ProjectAttackBlock> projectAttackBlocks) {
+		this.projectAttackBlocks = projectAttackBlocks;
+	}
+	
+
 	
 	@Override
 	public void parseBlock(Scanner input) throws Exception {

@@ -9,6 +9,9 @@ public class AnimSetDataFile {
 	private StringListBlock projectsList = new StringListBlock();
 	private List<ProjectAttackListBlock> projectAttacks = new ArrayList<>();
 	
+	public StringListBlock getProjectsList() {return projectsList;}
+	public List<ProjectAttackListBlock> getProjectAttackList() {return projectAttacks;}
+	
 	public void parse(String content) throws Exception {
 		Scanner input = new Scanner(content);
 		projectsList.fromASCII(input);
